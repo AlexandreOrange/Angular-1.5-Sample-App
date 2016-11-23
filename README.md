@@ -7,8 +7,16 @@ A deployed example is located at this address(better to see on desktop): <a href
 
 ## Features
 
+#### AngularJS 1.5
+Heavy use of `.component()` directive and enforced unidirectional data flow to partly implemente Flux.
+
 #### ES6
-Thanks to Babel, we can code in ES6 and prepare for the future.
+Thanks to Babel, we can code in ES6 and gain in productivity.
+The biggest advantage lies in `import` and `export`:
+- We don't care about globals
+- We don't care about wrapping our functions inside IIFEs when registering directives/components
+- Thanks to ES6 Classes, we use less Angular-ish code because components/directives/controllers are exported as Classes.
+Angular is mostly present in module files where we import all our classes.
 
 #### Style
 PostCSS and CSSnext are used instead of SASS in order to be more compatible in the future with the new properties and style only with the standard CSS language.
@@ -30,7 +38,7 @@ Webpack is enough for our needs: a development server with hot-reload, numerous 
 
 ## TODO
 
-- Use Redux and/or RxJs for state management. We use a pure AngularJS unidirectional data flow for the moment but it won't scale really well.
+- Use Redux and/or RxJs for complex state management. We use a pure AngularJS unidirectional data flow for the moment but it won't scale really well.
 - Make the website responsive. It only works on desktop for the moment.
 - Add an autocomplete component for the search input that will give suggestions of users while the visitor is typing.
 - Clean the Webpack config and have different files for development, production and test.
