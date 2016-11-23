@@ -2,6 +2,7 @@
 
 This is a simple client-side app using the Github API to list the repositories of a given user
 This sample app is based on a modular component-oriented architecture, which keeps things maintainable and predictable. Each module in an Angular app is a module component. A module component is the root definition for that module that encapsulates the logic, templates, styles, routing and child components in the same folder.
+A deployed example is located at this address(better to see on desktop): <a href="https://gitrepos.herokuapp.com/">https://gitrepos.herokuapp.com/</a>
 
 
 ## Features
