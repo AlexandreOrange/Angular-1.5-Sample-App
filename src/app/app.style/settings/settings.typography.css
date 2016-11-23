@@ -1,0 +1,30 @@
+
+/*=============================================
+=            SETTINGS.TYPOGRAPHY            =
+=============================================*/
+
+:root {
+    /* Font Stacks */
+    --sans-serif: -apple-system,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
+    --serif: georgia,
+               times,
+               serif;
+    
+    /* Font Weights */
+    --fw-xlight          : 100;
+    --fw-light           : 200;
+    --fw-book            : 300;
+    --fw-regular         : 400;
+    --fw-medium          : 500;
+    --fw-semibold        : 600;
+    --fw-bold            : 700;
+    --fw-black           : 800;
+    --fw-xblack          : 900;
+}
+

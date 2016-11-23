@@ -1,0 +1,31 @@
+/*=============================================
+=            REPOS-LIST COMPONENT            =
+=============================================*/
+
+@import "settings.default.css";
+
+/**
+ *
+ * 1. FROM THE DOCUMENTATION:
+ * In case the stagger doesn't work then these two values must be set
+ * to 0 to avoid an accidental CSS inheritance.
+ *
+ */
+
+.Repos-list__item {
+    &.ng-enter {
+        opacity: 0.2 ;
+        transform: translate3d(2em,0,0);
+        transition: all  0.3s var(--ease-out-quint);
+    }
+
+    &.ng-enter-stagger {
+        transition-delay: 0.1s;
+        transition-duration: 0s ; /* [1] */
+    }
+
+    &.ng-enter-active {
+        opacity: 1.0 ;
+        transform: translate3d(0,0,0);
+    }
+}

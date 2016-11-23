@@ -1,0 +1,92 @@
+/*------------------------------------*\
+    #BASE.HEADINGS
+\*------------------------------------*/
+
+/**
+ * Headings 1-6.
+ */
+
+/**
+ * We use named custom properties sets so we can apply heading
+ * styles to components regardless of their related tag.
+ *
+ * Use Case:
+ * //In settings file
+ * --h1: {
+ *  font-size: 3em;
+ * }
+ *
+ * // In component file
+ * .H1 {
+ *  @apply --h1;
+ * }
+ * 
+ * //Output will be
+ * .H1 {
+ *  font-size: 3em;
+ * }
+ */
+ 
+
+:root {
+    --heading-font-stack: var(--sans-serif);
+
+    --h1: {
+        font-size: 5em;
+        font-family: var(--heading-font-stack);
+        font-weight: var(--fw-bold);
+    };
+
+    --h2: {
+        font-size: 2.5em;
+        font-family: var(--heading-font-stack);
+        font-weight: var(--fw-bold);
+    };
+
+    --h3: {
+        font-size: 2em;
+        font-family: var(--heading-font-stack);
+        font-weight: var(--fw-bold);
+    };
+
+    --h4: {
+        font-size: 1.5em;
+        font-family: var(--heading-font-stack);
+        font-weight: var(--fw-bold);
+    };
+
+    --h5: {
+        font-size: 1.2em;
+        font-weight: var(--fw-bold);
+    };
+
+    --h6: {
+        font-size: 1em;
+        font-style: italic;
+        font-weight: var(--fw-bold);
+    };
+}
+
+h1 {
+    @apply --h1;
+}
+
+h2 {
+    @apply --h2;
+}
+
+h3 {
+    @apply --h3;
+}
+
+h4 {
+    @apply --h4;
+}
+
+h5 {
+    @apply --h5;
+}
+
+h6 {
+    @apply --h6;
+}

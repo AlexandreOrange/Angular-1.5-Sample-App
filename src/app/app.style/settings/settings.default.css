@@ -1,0 +1,26 @@
+
+/*=============================================
+=            SETTINGS.DEFAULT            =
+=============================================*/
+
+:root {
+    /* High Level Base settings */
+    --base-font-stack: var(--sans-serif);
+    --base-font-size: 16px;
+    --base-line-height: 1.5;
+    --base-bg-color: var(--silver);
+    --base-text-color: var(--black);
+
+
+    /* The unit below brings consistent fixed spacing across all the website.
+     * We try to avoid magic numbers as much as possible and reuse this unit 
+     * for almost every kind of box-model property. */
+    --base-spacing-unit: 1rem;
+
+
+    /* Easings Used for special transitions or animations.
+     * Check http://easings.net/ for more information. */
+    --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1); 
+}
+
+

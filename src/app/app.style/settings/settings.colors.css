@@ -1,0 +1,14 @@
+
+/*=============================================
+=            SETTINGS.COLORS            =
+=============================================*/
+
+
+:root {
+    /* A11y adapted colors for better readability */
+    --silver: #dddddd;
+    --black: #111111;
+    --white: #ffffff;
+    --red: #ff4136;
+    --aqua: #7bdbff;
+}

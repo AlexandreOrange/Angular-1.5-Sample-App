@@ -1,0 +1,25 @@
+
+/*=============================================
+=            LOADING COMPONENT            =
+=============================================*/
+
+@import "settings.default.css";
+
+.Loading {
+    display: inline-block;
+    animation: rotating 1s var(--ease-out-quint) infinite;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+

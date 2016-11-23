@@ -1,0 +1,31 @@
+
+/*=============================================
+=            ALERT COMPONENT            =
+=============================================*/
+
+@import "settings.default.css";
+@import "settings.colors.css";
+
+:root {
+    --Alert-bg-color: var(--aqua);
+    --Alert-color: color(var(--Alert-bg-color) shade(60%));
+    --Alert--danger-bg-color: color(var(--red) tint(50%));
+    --Alert--danger-color: color(var(--Alert-bg-color) shade(60%));
+    --Alert-padding: var(--base-spacing-unit);
+}
+
+.Alert {
+    width: 600px;
+    max-width: 100%;
+    background-color: var(--Alert-bg-color);
+    border-radius: 6px;
+    color: var(--Alert-color);
+    font-weight: bold;
+    padding: var(--Alert-padding);
+    border: 2px solid var(--Alert-color);
+}
+
+.Alert--danger {
+    background-color: var(--Alert--danger-bg-color);
+    color: var(--Alert--danger-color);
+}

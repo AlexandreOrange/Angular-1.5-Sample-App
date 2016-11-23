@@ -1,0 +1,119 @@
+
+/*=============================================
+=            UTILITIES.FLEX            =
+=============================================*/
+
+
+
+/* Applies to flex container
+   ========================================================================== */
+
+/**
+ * Container
+ */
+
+.flex {
+  display: flex;
+}
+
+.flexInline {
+  display: inline-flex;
+}
+
+/**
+ * Direction: row
+ */
+
+.flexRow {
+  flex-direction: row;
+}
+
+.flexRowReverse {
+  flex-direction: row-reverse;
+}
+
+/**
+ * Direction: column
+ */
+
+.flexCol {
+  flex-direction: column;
+}
+
+.flexColReverse {
+  flex-direction: column-reverse;
+}
+
+/**
+ * Wrap
+ */
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.flexNoWrap {
+  flex-wrap: nowrap;
+}
+
+.flexWrapReverse {
+  flex-wrap: wrap-reverse;
+}
+
+/**
+ * Align items along the main axis of the current line of the flex container
+ */
+
+.flexJustifyStart {
+  justify-content: flex-start;
+}
+
+.flexJustifyEnd {
+  justify-content: flex-end;
+}
+
+.flexJustifyCenter {
+  justify-content: center;
+}
+
+.flexJustifyBetween {
+  justify-content: space-between;
+}
+
+.flexJustifyAround {
+  justify-content: space-around;
+}
+
+/**
+ * Align items in the cross axis of the current line of the flex container
+ * Similar to `justify-content` but in the perpendicular direction
+ */
+
+.flexAlignItemsStart {
+  align-items: flex-start;
+}
+
+.flexAlignItemsEnd {
+  align-items: flex-end;
+}
+
+.flexAlignItemsCenter {
+  align-items: center;
+}
+
+.flexAlignItemsStretch {
+  align-items: stretch;
+}
+
+.flexAlignItemsBaseline {
+  align-items: baseline;
+}
+
+/**
+ * 1. Set the flex-shrink default explicitly to fix IE10 - http://git.io/vllC7
+ */
+
+.flex > *,
+.flexInline > * {
+  flex-shrink: 1; /* 1 */
+}

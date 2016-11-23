@@ -1,0 +1,16 @@
+<scroll-watcher on-scroll-bottom="$ctrl.getUserReposNextPage()" bind-scroll="!$ctrl.lastPageReached">
+</scroll-watcher>
+<repos-form class-name="mb"
+on-get-repos="$ctrl.getReposByUsername($event)"></repos-form>
+<div ng-show="$ctrl.usernameIsNotEmpty()">
+    <repos-list repos="$ctrl.repos"></repos-list>
+    <div ng-show="!$ctrl.searchInProgress">
+        <alert type="danger" ng-show="$ctrl.userDoesExist && !$ctrl.userHasRepos()">
+            &#64{{ $ctrl.username }} doesn't have any repos yet.
+        </alert>
+        <alert type="danger" ng-show="!$ctrl.userDoesExist && $ctrl.usernameIsNotEmpty()">
+            &#64{{ $ctrl.username }} doesn't exist.
+        </alert>
+    </div>
+</div>
+<p class="textCenter"><loading trigger="$ctrl.searchInProgress"></loading></p>

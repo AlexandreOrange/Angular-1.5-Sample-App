@@ -1,0 +1,23 @@
+/*=============================================
+=            INPUT-ELEMENT COMPONENT            =
+=============================================*/
+
+@import 'settings.default.css';
+@import 'settings.colors.css';
+
+:root {
+    --Input-width: 600px;
+    --Input-padding: calc(var(--base-spacing-unit) / 2);
+    --Input-bg-color: var(--white);
+    --Input-border: 2px solid color(var(--black) alpha(-70%));
+}
+
+.Input {
+    width: var(--Input-width);
+    max-width: 100%;
+    padding: var(--Input-padding);
+    outline: none;
+    background-color: var(--Input-bg-color);
+    border-bottom: var(--Input-border);
+    line-height: 1.5;
+}

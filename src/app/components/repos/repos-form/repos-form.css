@@ -1,0 +1,14 @@
+/*=============================================
+=            REPOS-FORM COMPONENT            =
+=============================================*/
+
+.ReposForm {
+    position: relative;
+}
+
+.ReposForm__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+

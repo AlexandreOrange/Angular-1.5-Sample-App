@@ -1,0 +1,25 @@
+/*=============================================
+=            BASE.LINKS            =
+=============================================*/
+
+a { 
+    cursor: pointer;
+    transition: color .1s;
+    color: #265C83;
+    text-decoration: none;
+}
+
+a:link, a:visited { 
+    color: #265C83;
+}
+
+a:hover { 
+    color: #0074D9;
+    text-decoration: underline;
+}
+
+a:active { 
+    transition: color .3s;
+    color: #B10DC9;
+}
+

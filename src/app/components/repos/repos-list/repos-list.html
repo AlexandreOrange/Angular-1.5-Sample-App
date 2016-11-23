@@ -1,0 +1,10 @@
+<ul class="Repos-list">
+    <li class="Repos-list__item mb" ng-repeat="repo in $ctrl.repos">
+        <a class="linkBlock" ng-href="{{ repo.html_url }}" target="_blank">
+            <card>
+                <h5 class="mb">{{ repo.full_name }}</h5>
+                <p>{{ repo.description }}</p>
+            </card>
+        </a>
+    </li>
+</ul>

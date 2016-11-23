@@ -1,0 +1,37 @@
+/* Always import normalize.css first */
+@import 'normalize.css';
+
+/* We import all the files from the folder app.style in the right order */
+
+
+/* Settings files contain CSS custom properties inside the :root element 
+ * which will be available globally.
+ */
+@import 'app.style/settings/settings.colors.css'; 
+@import 'app.style/settings/settings.media-queries.css'; 
+@import 'app.style/settings/settings.typography.css'; 
+@import 'app.style/settings/settings.default.css'; 
+
+
+/* Base files contain the rules for the base element tags */
+@import 'app.style/base/base.reset.css';
+@import 'app.style/base/base.page.css';
+@import 'app.style/base/base.headings.css';
+@import 'app.style/base/base.images.css';
+@import 'app.style/base/base.links.css';
+
+
+/* Utilities files contain single-responsibility classes to help layout our components */
+@import 'app.style/utilities/utilities.spacing.css';
+@import 'app.style/utilities/utilities.flex.css';
+@import 'app.style/utilities/utilities.size.css';
+@import 'app.style/utilities/utilities.text.css';
+@import 'app.style/utilities/utilities.links.css';
+
+
+/* Components stylesheets are encapsulated inside into the component's own folder 
+* and imported inside the main component JS file for better modularity.
+* Each component stylesheet will follow the BEM convention and contain classes named
+* after the component itself. In order to differentiate component from utilities
+* classes, the component class will be capitalised.
+*/
