@@ -4,9 +4,10 @@
   "description": "A simple app retrieving Github repos from a username",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "dev": "webpack-dev-server",
     "build": "webpack",
-    "test": "karma start"
+    "test": "karma start",
+    "start": "node server.js"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.8",
