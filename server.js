@@ -18,6 +18,6 @@ app.get("/", function (request, response) {
 
 
 // listen for requests :)
-var listener = app.listen(3000, function () {
+var listener = app.listen(process.env.PORT || 3000, function () {
   console.log('Load http://localhost:' + listener.address().port + '/ in a browser to see the output.');
 });
