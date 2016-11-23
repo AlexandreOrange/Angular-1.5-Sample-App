@@ -24,5 +24,14 @@ Webpack is enough for our needs: a development server with hot-reload, numerous 
 1. Clone this repo using `git clone https://github.com/AlexandreOrange/Angular-1.5-Sample-App.git`
 2. Run `npm install` to install dependencies.
 3. Run `npm run build` to create the production folder.
-4. Run `node server.js` to start the Express server.
+4. Run `npm start` to start the Express server.
 5. You can now see the example app at `http://localhost:3000`
+
+## TODO
+
+- Use Redux and/or RxJs for state management. We use a pure AngularJS unidirectional data flow for the moment but it won't scale really well.
+- Make the website responsive. It only works on desktop for the moment.
+- Add an autocomplete component for the search input that will give suggestions of users while the visitor is typing.
+- Clean the Webpack config and have different files for development, production and test.
+- Write more unit tests for the critical search functionality.
+- Write better directives for HTML tags like input or button. We should be able to use the normal tags without writing an additional directive on top of it.
